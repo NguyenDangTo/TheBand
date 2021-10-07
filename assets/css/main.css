@@ -90,13 +90,13 @@ header #mobile-menu-button:hover {
 }
 @keyframes changeBg {
     0%{
-        background-image: url(/FirstWeb/assets/img/home1.jpg);
+        background-image: url(assets/img/home1.jpg);
     }
     50%{
-        background-image: url(/FirstWeb/assets/img/home2.jpg);
+        background-image: url(assets/img/home2.jpg);
     }
     100%{
-        background-image: url(/FirstWeb/assets/img/home3.jpg);
+        background-image: url(assets/img/home3.jpg);
     }
 }
 #slideHome .heading {
