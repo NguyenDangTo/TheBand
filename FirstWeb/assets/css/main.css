@@ -1,0 +1,463 @@
+header {
+    color:white;
+    background-color:black;
+    height: 46px;
+    z-index: 2;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    overflow: hidden;
+}
+.nav {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 0;
+    color: #fff;
+}
+.nav li {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 22.5px;
+    padding:12px 24px;
+    display:inline-block;
+}
+.nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+.nav .subnav {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    color:#000;
+    font-size: 14px;
+    box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    width: 160px;
+}
+.subnav li {
+    padding: 12px 12px;
+    width: 10rem;
+    background-color: #fff;
+    font-size: 15px;
+    color: #000;
+}
+.nav .more:hover .subnav {
+    display: block;
+    position: fixed;
+    background-color: #000;
+    color: #ccc;
+}
+.nav .subnav li:hover {
+    background-color: #ccc;
+}
+.search-button {
+    float: right;
+    line-height: 46px;
+    padding:0 24px;
+    display:block;
+}
+header #mobile-menu-button {
+    float: right;
+    line-height: 46px;
+    padding:0 24px;
+    display: none;
+}
+header .search-button:hover {
+    background-color: orangered;
+}
+header #mobile-menu-button:hover {
+    color: black;
+    background-color: #ccc;
+}
+/* ----------HOME---------- */
+#slideHome {
+    position: relative;
+    margin-top: 46px;
+    padding-top:  50%;
+    animation: changeBg 10s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes changeBg {
+    0%{
+        background-image: url(/FirstWeb/assets/img/home1.jpg);
+    }
+    50%{
+        background-image: url(/FirstWeb/assets/img/home2.jpg);
+    }
+    100%{
+        background-image: url(/FirstWeb/assets/img/home3.jpg);
+    }
+}
+#slideHome .heading {
+    color:#fff;
+    position:absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    justify-content: center;
+    font-weight: 450;
+}
+#slideHome .description {
+    color:#fff;
+    position:absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* ----------BAND---------- */
+#slideBand {
+    padding:64px 16px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 784px;
+}
+#slideBand .heading {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-top: 14px;
+    line-height: 45px;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#slideBand .subheading {
+    margin:15px 0px;
+    opacity: 0.5;
+    text-align: center;
+}
+#slideBand .description {
+    margin:15px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+#slideBand .item-list {
+    text-align: center; 
+    padding:32px 0px;
+    height: 286px;
+}
+.item .picture {
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+.item .title {
+    padding:15px 0px;
+    text-align: center;
+    font-size: 15px;
+}
+/* ----------TOUR---------- */
+#bgTour {
+    background-color: #000;
+}
+#slideTour {
+    padding: 64px;  
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 784px;
+    line-height: 22.5px;
+}
+#slideTour .heading {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin:10px 0px;
+    color:#fff;
+    line-height: 45px;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#slideTour .subheading {
+    color: #ffffff;
+    margin:15px 0px;
+    opacity: 0.5;
+    text-align: center;
+}
+#slideTour .month-list {
+    list-style: none;
+    margin-left:auto;
+    margin-right:auto;
+}
+.month-list .month {
+    padding: 8px 16px;
+    background-color: #fff;
+    color:#000;
+    border-bottom: rgb(221,221,221) solid 0.5px;
+    color: rgb(117, 117, 117);
+}
+.month .condition {
+    background-color: orangered;
+    color :white;
+    padding: 4px;
+    margin-left: 16px;
+    font-family: Lato, sans-serif;
+    line-height: 22.5px;
+}
+.month .amount {
+    float: right;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    padding:0 8px;
+}
+#slideTour .place-list {
+    text-align: left;
+    padding:32px 0px;
+    color: #000;
+    display: inline-block;
+}
+.place img {
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+.place img:hover {
+    opacity: 0.6;
+}
+.place-list .place .container {
+    background-color: #fff;
+    line-height: 22.5px;
+    padding:15px 16px;
+}
+.container .place-heading {
+    font-size: 15px;
+    font-weight: 700;
+}
+.container .place-day {
+    margin:10px 0px;
+    opacity: 0.6;
+}
+.container .place-infor {
+    margin:15px 0px;
+}
+.container .buy-button {
+    padding :8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    line-height: 22.5px;
+}
+.container .buy-button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* ----------CONTACT---------- */
+#slideContact {
+    padding:64px 16px;
+    padding-bottom: 64px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 784px;
+    height: 480px;
+    line-height: 22.5px;
+}
+#slideContact .heading {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin:10px 0px;
+    line-height: 45px;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#slideContact .subheading {
+    margin:15px 0px;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 15px;
+}
+.container {
+    padding: 32px 0px;
+}
+.container .contact-info {
+    margin-top: 12px;
+    font-size: 18px;
+}
+.contact-info i {
+    width: 30px;
+    display:inline-block;
+}
+.contact-form .form-control {
+    padding: 8px;
+    margin-top: 8px;
+    line-height: 22.5px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 100%;
+}
+.contact-form .button {
+    margin-top: 16px;
+    float: right;
+    padding:8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 22.5px;
+    font-size: 15px;
+}
+.contact-form .button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.review img {
+    width: 100%;
+}
+footer {
+    padding:64px 16px;
+}
+footer .icon {
+    text-align: center;
+    font-size: 24px;
+}
+footer .icon i {
+    cursor: pointer;
+}
+footer .icon i:hover {
+    opacity: 0.3;
+}
+footer > div {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+footer > div > a {
+    color:#000;
+}
+/* ----------Buy tickets model---------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 22.5px;
+    display: none;
+}
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    position: relative;
+    animation: ModalEaseout ease-out 0.3s;
+}
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    letter-spacing: 4px;
+    height: 129px;
+
+}
+.modal-header i {
+    margin-right:12px;
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:16px;
+    color:#fff;
+    cursor: pointer;
+}
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.modal-body {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.modal-body .modal-label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    line-height: 22.5px;
+    font-size: 15px;
+    border:0.5px solid rgb(204, 204, 204);
+}
+.modal-body .modal-button {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    text-transform: uppercase;
+    line-height: 22.5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.modal-body .modal-button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.modal-footer {
+    padding: 16px;
+    font-size: 16px;
+}
+.modal-footer .modal-help {
+    display: block;
+    float: right;
+}
+.modal-footer .modal-help p a {
+    color: blue;
+}
+.modal-footer .close-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: orangered;
+    color: #fff;
+}
+.modal-footer .close-button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.modal.open {
+    display: flex;
+}
+@keyframes ModalEaseout {
+    0% {
+        transform: translateY(-250px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media (max-width:584px) {
+    
+}
