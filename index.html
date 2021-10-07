@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web</title>
+    <link rel="stylesheet" href="/FirstWeb/assets/css/base.css">
+    <link rel="stylesheet" href="/FirstWeb/assets/css/main.css">
+    <link rel="stylesheet" href="/FirstWeb/assets/css/responsive.css">
+    <link rel="stylesheet" href="/FirstWeb/assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+    <header id="header"> 
+        <ul class="nav">
+            <li><a href="#slideHome" id="home">Home</a></li>
+            <li><a href="#slideBand" id="band">Band</a></li>
+            <li><a href="#slideTour" id="tour">Tour</a></li>
+            <li><a href="#slideContact" id="contact">Contact</a></li>
+            <li class="more">
+                <a href="#">More <i class="fas fa-caret-down"></i></a>
+                <ul class="subnav">
+                    <li>Merchandis</li>
+                    <li>Extras</li>
+                    <li>Media</li>
+                </ul>
+            </li>
+        <div class="clear"></div>
+    </ul>
+        <div class="search-button">
+            <i class="fas fa-search"></i>
+        </div>
+        <div id="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="slide">
+        <div id="slideHome">
+            <h2 class="heading">New York</h2>
+            <p class="description">The atmosphere in New York is lorem ipsum.</p>
+        </div>
+        <div id="slideBand">
+            <h2 class="heading">The Band</h2>
+            <p class="subheading"><i>We love music</i></p>
+            <p class="description">We have created a fictional band website.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat.
+            </p>
+            <div class="row item-list">   
+                <div class="col col-3 item">
+                    <p class="title">Name</p>
+                    <img class="picture"src="/FirstWeb/assets/img/bandmember.jpg" alt="">
+                </div>
+                <div class="col col-3 item">
+                    <p class="title">Name</p>
+                    <img class="picture"src="/FirstWeb/assets/img/bandmember.jpg" alt="">
+                </div>
+                <div class="col col-3 item">
+                    <p class="title">Name</p>
+                    <img class="picture" src="/FirstWeb/assets/img/bandmember.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="bgTour">
+            <div id="slideTour">
+                <h2 class="heading">Tour dates</h2>
+                <p class="subheading"><i>Remember to book your tickets!</i></p>
+                <br>
+                <ul class="month-list">
+                    <li class="month">
+                        <p>September <span class="condition">Sold out</span> </p>
+                    </li>
+                    <li class="month">
+                        <p>October <span class="condition">Sold out</span> </p>
+                    </li>
+                    <li class="month">
+                        <p>November <span class="amount">3</span></p>
+                    </li>
+                        
+                </ul>
+                <div class="row place-list">
+                    <div class="col col-3 place">
+                        <img src="/FirstWeb/assets/img/newyork.jpg" alt="">
+                        <div class="container">
+                            <p class="place-heading">New York</p>
+                            <p class="place-day">Fri 27 Nov 2016</p>
+                            <p class="place-infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-button js-buy-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col col-3 place">
+                        <img src="/FirstWeb/assets/img/paris.jpg" alt="">
+                        <div class="container">
+                            <p class="place-heading">Paris</p>
+                            <p class="place-day">Sat 28 Nov 2016</p>
+                            <p class="place-infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-button js-buy-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col col-3 place">
+                        <img src="/FirstWeb/assets/img/sanfran.jpg" alt="">
+                        <div class="container">
+                            <p class="place-heading">San Francisco</p>
+                            <p class="place-day">Sun 29 Nov 2016</p>
+                            <p class="place-infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-button js-buy-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>    
+        </div>
+        <div id="slideContact">
+            <h2 class="heading">Contact</h2>
+            <p class="subheading"><i>Fan? Drop a note!</i></p>
+            <div class="row container clear">
+                <div class="col col-2 contact-info clear ">
+                    <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                    <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                    <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                </div>
+                <div class="col col-2 contact-form-container">
+                    <form action="" class="contact-form" >
+                        <div class="row clear">
+                            <div class="col col-2 row-full">
+                                <input type="text" required placeholder="Name" class="form-control">
+                            </div>
+                            <div class="col col-2 row-full">
+                                <input type="email" required placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row clear">
+                            <div class="col col-1">
+                                <input type="message" required placeholder="Message" class="form-control">
+                            </div>
+                        </div>
+                        <button class="button" type="submit">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <img src="/FirstWeb/assets/img/review.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <p class="icon"> 
+            <i class="fab fa-facebook-square opacity"></i>
+            <i class="fab fa-instagram opacity"></i>
+            <i class="fab fa-snapchat opacity"></i>
+            <i class="fab fa-pinterest-p opacity"></i>
+            <i class="fab fa-twitter opacity"></i>
+            <i class="fab fa-linkedin-in opacity"></i>
+        </p>
+        <div class="opacity">Powered by 
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </div>
+    </footer>
+    <div class="modal hide-buy-ticket">
+        <div class="modal-container">
+            <i class="fas fa-times modal-close hide-buy-ticket"></i>
+            <div class="modal-header">
+                <p><i class="fas fa-suitcase"></i>Tickets</p>
+            </div>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" placeholder="How many?">
+                <label for="" class="modal-label">
+                    <i class="fas fa-user"></i>
+                    Send to
+                </label>
+                <input type="email" placeholder="Enter email">
+                <button class="modal-button">
+                    Pay 
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <p class="close-button hide-buy-ticket">Close
+                    <i class="fas fa-times"></i>
+                </p>
+                <div class="modal-help">
+                    <p>Need
+                        <a href="">helps?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const hideModals =document.querySelectorAll('.hide-buy-ticket')
+        const modal = document.querySelector('.modal')
+        const more = document.querySelector('.more')
+        const modalContainer = document.querySelector('.modal-container')
+        function showBuyTicket() {
+            modal.classList.add('open')
+        }
+        function hideBuyTicket() {
+            modal.classList.remove('open')
+        }
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click',showBuyTicket)
+        }
+        for (const hideModal of hideModals) {
+            hideModal.addEventListener('click',hideBuyTicket)
+        }
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation() }
+        )
+
+    </script>
+    <script>
+        const header = document.getElementById('header')
+        const mobileMenu = document.getElementById('mobile-menu-button')
+        mobileMenu.onclick = function() {
+            const isClosed = header.clientHeight === 46;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = '46px';
+            }
+        }
+        
+        const menuItems = document.querySelectorAll('.nav li a[href*="#"]');
+        for (const menuItem of menuItems) {
+            menuItem.addEventListener('click',offMenu)
+        }
+        function offMenu() {
+            header.style.height = '46px';
+        }
+    </script>
+</body>
+</html>
