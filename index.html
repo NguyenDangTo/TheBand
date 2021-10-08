@@ -36,8 +36,31 @@
     </header>
     <div class="slide">
         <div id="slideHome">
-            <h2 class="heading">New York</h2>
-            <p class="description">The atmosphere in New York is lorem ipsum.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade"> 
+                    <img src="assets/img/home1.jpg" style="width:100%">
+                    <div class="text-box">
+                        <div div class="text-heading">Los Angeles</div>
+                        <div class="text">We had the best time playing at Venice Beach!</div>
+                    </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="assets/img/home2.jpg" style="width:100%">
+                    <div class="text-box">
+                        <div class="text-heading">New York</div>
+                        <div class="text">The atmosphere in New York is lorem ipsum.</div>
+                    </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="assets/img/home3.jpg" style="width:100%">
+                    <div class="text-box">
+                        <div class="text-heading">Chicago</div>
+                        <div class="text">Thank you, Chicago - A night we won't forget.</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="slideBand">
             <h2 class="heading">The Band</h2>
@@ -243,5 +266,21 @@
             header.style.height = '46px';
         }
     </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 3500);
+        }
+        </script>
 </body>
 </html>

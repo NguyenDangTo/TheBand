@@ -79,46 +79,23 @@ header #mobile-menu-button:hover {
     background-color: #ccc;
 }
 /* ----------HOME---------- */
-#slideHome {
-    position: relative;
-    margin-top: 46px;
-    padding-top:  50%;
-    animation: changeBg 10s infinite;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#slideHome .slideshow-container {
+   position: relative;
 }
-@keyframes changeBg {
-    0%{
-        background-image: url(assets/img/home1.jpg);
-    }
-    50%{
-        background-image: url(assets/img/home2.jpg);
-    }
-    100%{
-        background-image: url(assets/img/home3.jpg);
-    }
-}
-#slideHome .heading {
-    color:#fff;
-    position:absolute;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
+#slideHome .text-box {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
     text-align: center;
-    justify-content: center;
-    font-weight: 450;
+    transform: translateY(-30px);
 }
-#slideHome .description {
-    color:#fff;
-    position:absolute;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 16px;
+.text-box .text-heading {
+    font-size: 24px;
+    padding-bottom: 16px;
+    
 }
 /* ----------BAND---------- */
 #slideBand {
